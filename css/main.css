@@ -74,7 +74,7 @@ main style
 */
 
 main {
-  background: #ccc;
+  background: #f7fafc;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -87,7 +87,7 @@ main section.list-menu {
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  background: #ccc;
+  background: #f7fafc;
   grid-column-start: 1;
   grid-column-end: 2;
   width: 100%;
@@ -130,7 +130,7 @@ section content biblography
 */
 
 main section.content {
-  background: #ccc;
+  background: #f7fafc;
   grid-column-start: 2;
   grid-column-end: 4;
   width: 90%;
@@ -169,6 +169,10 @@ main section.content {
   color: #d27c89;
   padding: 2rem;
 }
+.sub-title-card{
+  color: #d27c89;
+  padding-bottom: 1rem;
+}
 .card-vision{
   display: flex;
   justify-content: space-around;
@@ -187,24 +191,25 @@ footer p {
   padding: 0.3rem 2rem;
 }
 
+/* 
+styles for page option 1 card
+*/
+
 .card {
-  /* background: #ccc; */
   background: white;
   box-shadow: 0px 4px 13px 0px #ccc;
   margin-bottom: 1rem;
-  /* background: #EBF4FF; */
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 90%;
-  height: 100px;
+  width: 100%;
+  height: 150px;
   overflow: hidden;
 }
 
 .card .card-image {
-  /* position: absolute; */
   width: 20%;
 }
 
@@ -215,6 +220,9 @@ footer p {
 
 .card .card-price {
   padding: 1rem;
+  font-size: 20px;
+  color: #44546b;
+  font-weight: 700;
   width: 10%;
 }
 
@@ -222,7 +230,6 @@ footer p {
   background: white;
   box-shadow: 0px 4px 13px 0px #ccc;
   margin-bottom: 2rem;
-  /* background: #EBF4FF; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -237,7 +244,7 @@ footer p {
   max-height: 200px;
 }
 .card-2 .card-content-2 {
-  width: 100%;
+  width: 90%;
   padding: 1rem;
   justify-content: space-around;
   align-items: center;
@@ -246,6 +253,9 @@ footer p {
 
 .card-price-2 {
   text-align: center;
+  color: #44546b;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 /* 
@@ -253,10 +263,8 @@ footer p {
 */
 
 .main-contact {
-  background: #ddebf7;
+  background: #e2e8f0;
   position: relative;
-  /* height: 110vh; */
-  /* background: red; */
 }
 .content-contact {
   display: flex;
@@ -267,8 +275,10 @@ footer p {
   flex-direction: column;
   align-items: center;
   height: 500px;
-  border: 8px solid #00bfd7;
-  background: #0d0d31;
+  /* border: 8px solid #00bfd7; */
+  box-shadow: 0px 4px 13px 0px #ccc;
+
+  background: white;
 }
 .content-contact form{
   width: 80%;
@@ -277,7 +287,7 @@ footer p {
 .content-contact h2 {
   margin: 0 0 30px;
   padding: 0;
-  color: #fff;
+  color: #44546b;
   text-align: center;
 }
 
@@ -289,10 +299,10 @@ footer p {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #44546b;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ccc;
   outline: none;
   background: transparent;
 }
@@ -302,7 +312,7 @@ footer p {
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #44546b;
   pointer-events: none;
   transition: .5s;
 }
@@ -316,7 +326,7 @@ footer p {
 }
 
 .form-checkbox span{
-  color: white;
+  color: #44546b;
 }
 
 .form-button {
@@ -334,7 +344,7 @@ width: 100%;
   width: 100%;
 }
 .form-footer{
-  color: white;
+  color: #44546b;
   text-align: center;
 }
 .form-footer span{
@@ -345,7 +355,7 @@ width: 100%;
 
 .main-register{
   position: relative;
-  background: #ddebf7;
+  background: #e2e8f0;
 }
 .content-register {
   display: flex;
@@ -354,13 +364,14 @@ width: 100%;
   grid-column-end: 4;
   flex-direction: column;
   align-items: start;
-  border: 10px solid #265467;
-  background: #232f3c;
+  box-shadow: 0px 4px 13px 0px #ccc;
+  /* border: 10px solid #feb2b2; */
+  background: white;
   padding: 2rem;
 }
 
 .content-register h2 {
-  color: #ccc;
+  color: #44546b;
   font-size: 30px;
   padding-bottom: 1rem;
 }
@@ -371,31 +382,40 @@ width: 100%;
 
 .form-register input{
   width: 90%;
-  color: white;
+  color: #4A5568;
   padding: 1rem;
-  border: 2px solid #265467;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  background: #232f3c;
+  background: #edf2f7;
   margin: 10px auto;
+}
+
+.form-register input:focus{
+  border: 1px solid #44546b;
 }
 .form-register h4{
   padding: 1rem;
   text-align: center;
-  color: #ccc;
+  color: #44546b;
 }
 
 .form-register button{
-  background: #1743b0;
-  font-size: 20px;
-  font-weight:400;
-  color: white;
+  border-radius: 10px;
+  background: #feb2b2;
+  font-size: 25px;
+  font-weight:700;
+  /* color: #663328; */
+  color: rgb(39, 38, 38);
+  border: 1px solid #ac4f4f;
   border: none;
   padding: 1rem;
   width: 100%;
 }
 .form-register p{
   padding: 1rem;
-  color: #ccc;
+  color: #44546b;
   text-align: center;
 }
-
+.form-register button:hover{
+  cursor: pointer;
+}

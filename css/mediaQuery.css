@@ -21,7 +21,7 @@
   }
   main section.content {
     margin-top: 100px;
-    background: #ccc;
+    background: #f7fafc;
     grid-column-start: 1;
     grid-column-end: 5;
     width: 90%;
@@ -48,4 +48,27 @@
     width: 400px;
   }
   
+}
+
+@media (max-width:768px){
+  .content-contact{
+    margin: 2rem 1rem;
+  }
+  .card{
+    flex-direction: column;
+    height: 400px;
+  }
+  .card .card-image {
+    padding-top: 0.5rem;
+    width: 30%;
+  }
+  .card-2{
+    height: 400px;
+  }
+  .card-2 .card-content-2{
+   flex-direction: column; 
+  }
+  .card-price-2{
+    padding-top: 1rem;
+  }
 }
