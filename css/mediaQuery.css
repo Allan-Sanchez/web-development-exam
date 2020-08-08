@@ -1,0 +1,51 @@
+@media (max-width: 1000px) {
+  .menu {
+    /* background: red; */
+    flex-direction: column;
+  }
+  .hambuerger {
+    display: block;
+  }
+
+  .button-menu ul {
+    height: 200px;
+    padding: 1rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  main section.list-menu {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  main section.content {
+    margin-top: 100px;
+    background: #ccc;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 90%;
+    padding-bottom: 1rem;
+  }
+  .content .content-image {
+    height: 200px;
+  }
+  .content-product-list {
+    position: absolute;
+    top: 80%;
+    padding-bottom: 3rem;
+  }
+  .card-vision{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .content-register{
+      width: 400px;
+  }
+  .content-contact{
+    width: 400px;
+  }
+  
+}

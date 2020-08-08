@@ -4,27 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/mediaQuery.css">
     <title>Document</title>
   </head>
   <body>
     <nav class="menu">
-      <div class="logo">
-        <img src="../image/chocolate.svg" alt="cake Logo" />
-        <h1>World Coke</h1>
+      <div class="menu-logo">
+        <div class="logo">
+          <img src="../image/chocolate.svg" alt="cake Logo" />
+          <h1>World Coke</h1>
+        </div>
+        <div class="hambuerger">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            width="2.5em"
+            height="2.5em"
+            style="
+              -ms-transform: rotate(360deg);
+              -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+            "
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 512 512"
+          >
+            <path fill="white" d="M80 96h352v32H80z" />
+            <path fill="white " d="M80 240h352v32H80z" />
+            <path fill="white" d="M80 384h352v32H80z" />
+          </svg>
+        </div>
       </div>
-      <div>
+
+      <div class="button-menu">
         <ul>
           <li>
-            <a href="/" class="active">Home</a>
+            <a href="/" >Home</a>
           </li>
           <li>
-            <a href="./option2.html">Option 2</a>
+            <a  target="_blank" href="./option1.html">Option-1</a>
           </li>
           <li>
-            <a href="./register.html">Register</a>
+            <a  target="_blank" href="./register.html">Register</a>
           </li>
           <li>
-            <a href="./login.html">Login</a>
+            <a class="active" target="_blank" href="./login.html">Login</a>
           </li>
         </ul>
       </div>
@@ -34,21 +57,21 @@
             <h2>Welcome</h2>
               <form>
                 <div class="user-box">
-                  <input type="text" name="" required="">
+                  <input type="text" name="username" required autofocus>
                   <label>Username</label>
                 </div>
                 <div class="user-box">
-                  <input type="password" name="" required="">
+                  <input type="password" name="password" required="">
                   <label>Password</label>
                 </div>
                 <div class="form-checkbox">
-                  <input type="checkbox" name="" id="">
-                    <span>Lorem ipsum dolor sit.</span>
+                  <input type="checkbox" name="email" id="">
+                    <span>remember password.</span>
                 </div>
                 <div class="form-button">
                   <button  type="submit">Login</button>
                 </div>
-                <p class="form-footer">Lorem ipsum dolor sit amet <span>lorem</span> .</p>
+                <p class="form-footer">I forgot the password <span>recover</span> .</p>
                 
               </form>
        </div>

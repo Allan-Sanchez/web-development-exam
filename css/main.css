@@ -2,15 +2,21 @@
   margin: 0;
   padding: 0;
 }
-
+/* 
+  Menu style 
+*/
 .menu {
   background: #44546b;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 1rem;
   margin: 0 auto;
+}
+
+.menu-logo{
+  /* height: 100px; */
+display: flex;
 }
 
 .menu .logo {
@@ -18,10 +24,12 @@
   justify-content: start;
   align-items: center;
   /* max-width: 60px; */
-  max-height: 60px;
+  /* max-height: 60px; */
 }
 .menu .logo h1 {
   padding: 0 2rem;
+  font-size: 34px;
+  font-weight: 700;
   color: white;
 }
 
@@ -44,7 +52,7 @@
   text-decoration: none;
 }
 
-/* .menu ul li a:hover{
+.menu ul li a:hover{
     cursor: pointer;
     border-radius: 9%;
     background: #FEB2B2;
@@ -55,35 +63,56 @@
     border-radius: 9%;
     background: #FEB2B2;
     color:#663328;
-} */
+}
+.hambuerger{
+  display: none;
+  /* padding: 1rem; */
+}
+
+/* 
+main style 
+*/
 
 main {
+  background: #ccc;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* 
+section list menu product more send
+ */
 main section.list-menu {
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  /* background: #ccc; */
+  background: #ccc;
   grid-column-start: 1;
   grid-column-end: 2;
   width: 100%;
-  height: 650px;
+  position: relative;
+  /* height: 650px; */
 }
 
 section .list-menu-image {
   width: 70%;
-  height: 70%;
+  /* height: 70%; */
 }
 
 .list-menu-image img {
   width: 100%;
 }
 .content-product-list {
-  margin-top: -200px;
+  position: absolute;
+  top:40%;
+  /* margin-top: -200px; */
+}
+.product-fix-list{
+  top:25%;
+}
+.product-2-fix-list{
+  top: 14%;
 }
 
 .product-list ul li {
@@ -96,12 +125,17 @@ section .list-menu-image {
   text-decoration: none;
 }
 
+/* 
+section content biblography
+*/
+
 main section.content {
-  /* background: #ccc; */
+  background: #ccc;
   grid-column-start: 2;
   grid-column-end: 4;
-  width: 100%;
+  width: 90%;
   padding-bottom: 1rem;
+  margin: 0 auto;
 }
 
 .content h2 {
@@ -112,8 +146,9 @@ main section.content {
 
 .content .content-image {
   position: relative;
-  width: 90%;
+  width: 100%;
   height: 400px;
+  min-height: 200px;
   max-width: 100%;
   max-height: 400px;
   overflow: hidden;
@@ -123,11 +158,25 @@ main section.content {
   position: absolute;
   width: 100%;
 }
-/* .title{
+.title{
     color: #663328;
-}*/
+    font-size: 1.6rem;
+}
+.title-principal{
+  font-size: 3rem;
+}
 .sub-title {
-  /* color: #d27c89; */
+  color: #d27c89;
+  padding: 2rem;
+}
+.card-vision{
+  display: flex;
+  justify-content: space-around;
+}
+.p-text{
+  padding: 1rem;
+}
+.card-vision div {
   padding: 1rem;
 }
 
@@ -206,21 +255,20 @@ footer p {
 .main-contact {
   background: #ddebf7;
   position: relative;
-  height: 110vh;
+  /* height: 110vh; */
   /* background: red; */
 }
 .content-contact {
   display: flex;
+  margin: 4rem auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 400px;
   height: 500px;
   border: 8px solid #00bfd7;
   background: #0d0d31;
-  position: absolute;
-  top: 5%;
-  left: 36%;
 }
 .content-contact form{
   width: 80%;
@@ -294,23 +342,20 @@ width: 100%;
   color: #00bfd7;
 }
 /* styles by register  page*/
+
 .main-register{
-   position: relative;
+  position: relative;
   background: #ddebf7;
-  height: 110vh;
 }
 .content-register {
   display: flex;
-  /* justify-content: space-around; */
+  margin: 4rem auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
   flex-direction: column;
   align-items: start;
-  width: 400px;
-  height: 500px;
   border: 10px solid #265467;
   background: #232f3c;
-  position: absolute;
-  top: 5%;
-  left: 36%;
   padding: 2rem;
 }
 
@@ -322,7 +367,6 @@ width: 100%;
 
 .form-register{
   width: 100%;
-  /* margin: 10px auto; */
 }
 
 .form-register input{
@@ -354,3 +398,4 @@ width: 100%;
   color: #ccc;
   text-align: center;
 }
+

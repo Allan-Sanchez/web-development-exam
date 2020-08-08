@@ -4,27 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/mediaQuery.css">
     <title>Document</title>
   </head>
   <body>
     <nav class="menu">
-      <div class="logo">
-        <img src="../image/chocolate.svg" alt="cake Logo" />
-        <h1>World Coke</h1>
+      <div class="menu-logo">
+        <div class="logo">
+          <img src="../image/chocolate.svg" alt="cake Logo" />
+          <h1>World Coke</h1>
+        </div>
+        <div class="hambuerger">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            width="2.5em"
+            height="2.5em"
+            style="
+              -ms-transform: rotate(360deg);
+              -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+            "
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 512 512"
+          >
+            <path fill="white" d="M80 96h352v32H80z" />
+            <path fill="white " d="M80 240h352v32H80z" />
+            <path fill="white" d="M80 384h352v32H80z" />
+          </svg>
+        </div>
       </div>
-      <div>
+
+      <div class="button-menu">
         <ul>
           <li>
-            <a href="/" class="active">Home</a>
+            <a href="/" >Home</a>
           </li>
           <li>
-            <a href="./option2.html">Option 2</a>
+            <a  target="_blank" href="./option1.html">Option-1</a>
           </li>
           <li>
-            <a href="./register.html">Register</a>
+            <a class="active" target="_blank" href="./register.html">Register</a>
           </li>
           <li>
-            <a href="./login.html">Login</a>
+            <a target="_blank" href="./login.html">Login</a>
           </li>
         </ul>
       </div>
@@ -34,7 +57,7 @@
         <h2>Register form</h2>
         <form class="form-register" action="">
           <div>
-            <input type="text" name="" id="" placeholder="type your name" required>
+            <input type="text" name="" id="" placeholder="type your name" autofocus required>
           </div>
           <div>
             <input type="text" name="" id="" placeholder="type your last name" required>

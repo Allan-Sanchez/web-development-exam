@@ -4,89 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/mediaQuery.css" />
     <title>Document</title>
   </head>
   <body>
     <nav class="menu">
-      <div class="logo">
-        <img src="./image/chocolate.svg" alt="cake Logo" />
-        <h1>World Coke</h1>
+      <div class="menu-logo">
+        <div class="logo">
+          <img src="./image/chocolate.svg" alt="cake Logo" />
+          <h1>World Coke</h1>
+        </div>
+        <div class="hambuerger">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            width="2.5em"
+            height="2.5em"
+            style="
+              -ms-transform: rotate(360deg);
+              -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+            "
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 512 512"
+          >
+            <path fill="white" d="M80 96h352v32H80z" />
+            <path fill="white " d="M80 240h352v32H80z" />
+            <path fill="white" d="M80 384h352v32H80z" />
+          </svg>
+        </div>
       </div>
-      <div>
+
+      <div class="button-menu">
         <ul>
           <li>
             <a href="/" class="active">Home</a>
           </li>
           <li>
-            <a target="blanck" href="./pages/option1.html">Optin 1</a>
+            <a target="_blank" href="./pages/option1.html">Option-1</a>
           </li>
           <li>
-            <a href="./pages/register.html">Register</a>
+            <a target="_blank" href="./pages/register.html">Register</a>
           </li>
           <li>
-            <a href="./pages/login.html">Login</a>
+            <a target="_blank" href="./pages/login.html">Login</a>
           </li>
         </ul>
       </div>
     </nav>
+
     <main>
       <section class="list-menu">
-            <div class="list-menu-image">
-              <img src="./image/cake.png" alt="">
-            </div>
-            <div class="content-product-list">
-                <h3 class="title">Lorem ipsum dolor sit.</h3>
-                <div class="product-list">
-                    <ul>
-                        <!-- <li>
-                            <a href="#">Sam's Famous Carrot Cake</a>
-                        </li>
-                        <li>
-                            <a href="#">Banana Cake VI</a>
-                        </li>
-                        <li>
-                            <a href="#">Tiramisu Layer Cake</a>
-                        </li>
-                        <li>
-                            <a href="#">Tres Leches (Milk Cake)</a>
-                        </li> -->
-                        <li>
-                            <a href="#">Lorem ipsum dolor sit.</a>
-                        </li>
-                        <li>
-                            <a href="#">Lorem ipsum dolor sit.</a>
-                        </li>
-                        <li>
-                            <a href="#">Lorem ipsum dolor sit.</a>
-                        </li>
-                        <li>
-                            <a href="#">Lorem ipsum dolor sit.</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            
+        <div class="list-menu-image">
+          <img src="./image/cake.png" alt="" />
+        </div>
+        <div class="content-product-list">
+          <h3 class="title">Most selled products.</h3>
+          <div class="product-list">
+            <ul>
+              <li>
+                <a href="#">Sam's Famous Carrot Cake</a>
+              </li>
+              <li>
+                <a href="#">Banana Cake VI</a>
+              </li>
+              <li>
+                <a href="#">Tiramisu Layer Cake</a>
+              </li>
+              <li>
+                <a href="#">Tres Leches (Milk Cake)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section class="content">
-          <h2 class="title">Lorem ipsum dolor sit amet.</h2>
-          <div class="content-image">
-              <img src="./image/img-home.jpg" alt="cake shop">
-          </div>
-          <div class="content-text">
-              <h4 class="sub-title">Description</h4>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi distinctio numquam atque! Ratione a cumque mollitia qui error eligendi officiis maxime sequi quae sunt eaque sed ipsam, excepturi ullam vero!</p>
+        <h2 class="title title-principal">World Cake.</h2>
+        <div class="content-image">
+          <img src="./image/img-home.jpg" alt="cake shop" />
+        </div>
+        <div class="content-text">
+          <h4 class="sub-title">Description</h4>
+          <p class="p-text">
+            With more than 67 years of experience, World Cake offers the best
+            variety of sweet and savory pastries. We are a family business,
+            which we are committed to brighten up and sweeten the good moments
+            in the lives of our clients.
+          </p>
 
-              <h4 class="sub-title">Our commitment</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt ab non libero error qui, repudiandae alias asperiores quos officia? Laborum modi accusamus repellendus corporis? Obcaecati animi nesciunt ab repudiandae!</p>
+          <div class="card-vision">
+            <div>
+              <h4 class="sub-title">Why we</h4>
+              <p>
+                World Cake offers a unique flavor with top quality ingredients,
+                our service is specialized and we are the number 1 option for many
+                Guatemalans.
+              </p>
+            </div>
+            <div>
+              <h4 class="sub-title">Our mission</h4>
+              <p>
+                World Cake's mission is to satisfy the palate of the Guatemalan population and accompany them with our flavor in their different celebrations.
+              </p>
+            </div>
           </div>
+        </div>
       </section>
     </main>
+
     <footer>
       <p>Lorem ipsum dolor sit amet.</p>
       <p>Lorem, ipsum dolor.</p>
       <p>
-        Created for Allan Sanchez 2020 &#169; 
+        Created for Allan Sanchez 2020 &#169;
       </p>
     </footer>
   </body>
