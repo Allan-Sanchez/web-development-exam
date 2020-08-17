@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+ 
+  </head>
+  <body class="bg-gray-300">
+    <div class="w-full h-full  pt-10">
+      <div class="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md">
+        <h2 class="text-lg text-gray-700 font-semibold capitalize">
+          Mini Stock
+        </h2>
+
+        <form id="formProduct">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
+            <div>
+              <label class="text-gray-700" for="idProduct">ID Client</label>
+              <input
+                id="idProduct"
+                type="text" required disabled 
+                class="w-full mt-2 px-4 py-2 block rounded bg-gray-400 text-gray-800 border border-gray-300 focus:outline-none focus:bg-white"
+              />
+            </div>
+
+            <div>
+              <label class="text-gray-700" for="productNmae">Product Name</label>
+              <input
+                id="productName" required autofocus
+                type="text" placeholder="type product name"
+                class="w-full mt-2 px-4 py-2 block rounded bg-gray-200 text-gray-800 border border-gray-300 focus:outline-none focus:bg-white"
+              />
+            </div>
+
+            <div>
+              <label class="text-gray-700" for="idImage">Image</label>
+              <input
+                id="idImage"
+                type="text"  placeholder="http://www.example.com"
+                class="w-full mt-2 px-4 py-2 block rounded bg-gray-200 text-gray-800 border border-gray-300 focus:outline-none focus:bg-white"
+              />
+            </div>
+
+            <div>
+              <label class="text-gray-700" for="IdPrice">Price</label>
+              <input
+                id="idPrice"
+                type="number" required placeholder="$ 0.00"
+                class="w-full mt-2 px-4 py-2 block rounded bg-gray-200 text-gray-800 border border-gray-300 focus:outline-none focus:bg-white"
+              />
+            </div>
+          </div>
+
+          <div class="flex justify-end mt-4">
+            <button type="submit"
+              class="px-4 py-2 bg-blue-800 text-gray-200 rounded hover:bg-blue-700 focus:outline-none focus:bg-gray-700"
+            >
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="flex flex-col max-w-4xl mx-auto mt-10">
+        <div
+          class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"
+        >
+          <div 
+            class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200"
+          >
+            <table id="containerTable" class="hidden min-w-full divide-y divide-gray-200">
+              <thead class="bg-blue-900">
+                <tr>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-semibold text-gray-300 uppercase tracking-wider w-3/12"
+                  >
+                    ID
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-semibold text-gray-300 uppercase tracking-wider w-6/12"
+                  >
+                    Url Image
+                  </th>
+                  <th
+                    class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-md leading-4 font-semibold text-gray-300 uppercase tracking-wider w-3/12"
+                  >
+                    Price
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="tableProduct" class="bg-white divide-y divide-gray-200">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module"  src="../js/main.js"></script>
+  </body>
+</html>
