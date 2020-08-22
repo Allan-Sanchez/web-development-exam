@@ -21,6 +21,10 @@ Here you can see the site already in a production [exam1-web-developer-2020.netl
 ### Login Page
 ![alt text](https://res.cloudinary.com/dx9n8tsyu/image/upload/v1596949134/login_dz6fd4.png "Page Login")
 
+### Mini Stock Page
+![alt text](https://res.cloudinary.com/dx9n8tsyu/image/upload/v1598061973/screenshot-exam1-web-developer-2020.netlify.app-2020.08.21-20_04_16_lgill3.png "Page Login")
+
+
 
 ## Suggestions
 Convert the project into a SPA to improve the mobile experience and so that later the migration so that a PWA is not complicated, in the same way, make greater use of Javascript
